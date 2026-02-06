@@ -100,7 +100,7 @@ def main():
     elif action == "update" and len(sys.argv) > 3:
         update_task(sys.argv[2], sys.argv[3])
     elif action == "delete" and len(sys.argv) > 2:
-        delete_task(sys.argv[2], "in-progress")
+        delete_task(sys.argv[2],)
     elif action == "mark-done" and len(sys.argv) > 2:
         mark_status(sys.argv[2], "done")
     else:
