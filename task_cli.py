@@ -55,11 +55,11 @@ def update_task(task_id, new_description):
     for task in tasks:
         if task['id'] == int(task_id):
             task['description'] = new_description
-            task['updateAt'] = datetime.now().isoformat()
+            task['updatedAt'] = datetime.now().isoformat()
             save_tasks(tasks)
             print("Task updated successfully.")
             return
-        print("Task ID not found.")
+    print("Task ID not found.")
 
 
 def delete_task(task_id):
